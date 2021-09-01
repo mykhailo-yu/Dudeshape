@@ -9,6 +9,9 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    &-bottom {
+        background-color: $c1;
+    }
 }
 .container {
     max-width: 1200px;
@@ -182,6 +185,7 @@ nav {
 }
 main {
     margin-top: 270px;
+    margin-bottom: 400px;
 }
 .menu {
     &-title {
@@ -262,15 +266,15 @@ main {
         }
     }
 }
-.blockOne {
+.block {
     display: flex;
     flex: 0 0 50%;
     margin-top: 160px;
     margin-bottom: 100px;
-    .block-img {
+    &-img {
         border-radius: 25px;
     }
-    .block-inner {
+    &-inner {
         margin-top: 140px;
         margin-left: 120px;
         &-header {
@@ -301,5 +305,201 @@ main {
                 line-height: 30px;
             }
         }
+    }
+    &-btn {
+        width: 150px;
+        height: 40px;
+        background-color: $c4;
+        color: $c3;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+.blockTwo {
+    .block-inner {
+        margin-left: 0px;
+        margin-right: 120px;
+    }
+}
+.blockThree {
+    blockquote {
+        font-size: 26px;
+        font-weight: 400;
+        font-style: italic;
+        color: $c2;
+        margin-left: 0;
+        line-height: 45px;
+    }
+    .block-inner {
+        margin-top: 115px;
+        &-header {
+            color: $c4;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 50px;
+            margin-top: 40px;
+            margin-bottom: 5px;
+        }
+        &-text {
+            margin-top: 0;
+            line-height: 20px;
+        }
+    }
+}
+.signIn-block {
+    position: absolute;
+    top: -250px;
+    left: 100px;
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url(../img/bottom-bg.png);
+    border-radius: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 80px 220px 0;
+    &-header {
+        color: $c3;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 53px;
+    }
+    &-form {
+        width: 500px;
+        height: 50px;
+        background-color: $c3;
+        border-radius: 31px;
+        box-sizing: border-box;
+        padding: 5px 5px 5px 40px;
+        display: flex;
+        justify-content: space-between;
+        * {
+            outline: none;
+            border: none;
+        }
+        input {
+            font-size: 12px;
+            font-weight: 400;
+        }
+        
+    }
+    &-btn {
+        width: 100px;
+        height: 40px;
+        background-color: $c4;
+        border-radius: 26px;
+        color: $c3;
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+footer {
+    position: relative;
+}
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 230px;
+    padding-right: 200px;
+    margin-bottom: 60px;
+    &-left {
+        .footer-logo {
+            font-size: 38px;
+            font-weight: 400;
+            font-family: Playball;
+            color: $c3;
+            line-height: 48px;
+            margin-bottom: 10px;
+        }
+        .footer-text {
+            width: 292px;
+            font-size: 12px;
+            font-weight: 400;
+            color: $c3;
+            line-height: 15px;
+            margin-top: 0;
+            margin-bottom: 26px;
+        }
+        .footer-form {
+            width: 320px;
+            height: 46px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 16px 11px 16px 16px;
+            * {
+                outline: none;
+                border: none;
+                background-color: transparent;
+            }
+            input {
+                width: 250px;
+                font-size: 12px;
+                font-weight: 400;
+                color: $c3;
+            }
+            button {
+                width: 24px;
+                height: 24px;
+                background-image: url(../img/ArrowRight.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+    &-right {
+        display: flex;
+        &-ul {
+            .ul-title {
+                font-size: 18px;
+                color: $c3;
+                margin-bottom: 15px;
+                
+            }
+            margin-left: 50px;
+            list-style-type: none;
+            padding: 0;
+            font-weight: 400;
+            font-size: 14px;
+            li {
+                margin-bottom: 10px;
+                a {
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, 0.8);;
+                }
+            }
+        }
+    }
+}
+.footer-social {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.6);
+    justify-content: center;
+    display: flex;
+    &-link {
+        width: 28px;
+        height: 28px;
+        display: block;
+        text-decoration: none;
+        margin: 20px 30px 58px 30px;
+    }
+    .facebook {
+        background-image: url(../img/facebook.svg);
+    }
+    .instagram {
+        background-image: url(../img/instagram.svg);
+    }
+    .twitter {
+        background-image: url(../img/twitter.svg);
     }
 }
